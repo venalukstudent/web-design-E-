@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML -FORMS</title>
+  </head>
+  <body>
+    <h1>New Account Registration</h1>
+
+    <form>
+      <table>
+        <tr>
+          <td><label for="firstName">First Name</label></td>
+          <td><input type="text" name="firstName" id="firstName" /></td>
+          <td><label for="lastName">Last Name</label></td>
+          <td><input type="text" name="lastName" id="lastName" /></td>
+        </tr>
+        <tr>
+          <td><label for="dateOfBirth">Date of Birth</label></td>
+          <td><input type="date" name="dateOfBirth" id="dateOfBirth" /></td>
+          <td><label for="gender">Gender</label></td>
+          <td>
+            <input type="radio" name="gender" id="gender" value="Male" /> Male
+            <input type="radio" name="gender" id="gender" value="Female" />
+            Female
+          </td>
+        </tr>
+        <tr>
+          <td><label for="phoneNumber">Phone Number</label></td>
+          <td><input type="number" name="phoneNumber" id="phoneNumber" /></td>
+          <td><label for="prodi">Prodi</label></td>
+          <td>
+            <select name="prodi" id="prodi">
+              <option value="IF">Informatika</option>
+              <option value="SI">Sistem Informasi</option>
+              <option value="TI">Teknologi Informasis</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="emailAddress">Email Address</label></td>
+          <td><input type="email" name="emailAddress" id="emailAddress" /></td>
+          <td><label for="password">Password</label></td>
+          <td><input type="password" name="password" id="password" /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="hobby">Hobby</label>
+            <input
+              type="checkbox"
+              name="hobby"
+              id="hobby1"
+              value="programming"
+            />
+            Programming
+            <input type="checkbox" name="hobby" id="hobby2" value="database" />
+            Database
+            <input
+              type="checkbox"
+              name="hobby"
+              id="hobby3"
+              value="networking"
+            />
+            Networking
+            <input type="checkbox" name="hobby" id="hobby4" value="security" />
+            Security
+            <input
+              type="checkbox"
+              name="hobby"
+              id="hobby5"
+              value="multimedia"
+            />
+            Multimedia
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="uploadID">Upload ID Card</label>
+            <input type="file" name="uploadID" id="uploadID" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="comment">Comment</label>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <input type="reset" value="Clear Form" />
+            <input type="submit" value="Submit" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
