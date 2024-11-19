@@ -1,0 +1,32 @@
+#Layout {
+  display: grid;
+  grid-template-rows: 100px auto 100px;
+  grid-template-columns: 200px auto 200px;
+  grid-template-areas:
+    "header header header"
+    "ads main links"
+    "footer footer footer";
+}
+
+#header {
+  background-color: lightblue;
+  grid-area: header;
+  text-align: center;
+}
+
+#ads {
+  grid-area: ads;
+}
+
+#main {
+  grid-area: main;
+}
+
+#links {
+  grid-area: links;
+}
+
+#footer {
+  grid-area: footer;
+  text-align: center;
+}
